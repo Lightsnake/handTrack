@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Face Touch</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <meta http-equiv="X-UA=Compatible" content="ie=edge"/>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="image/demonicon.jpg" />
+  </head>
+  <body>
+    <header>
+        <nav class="navBar">
+            <a href="../index.html" target="_blank">Home</a>
+            <a href="https://github.com/Lightsnake" target="_blank">Github</a>
+            <a href="https://www.linkedin.com/in/andrew-tsan/" target=_blank">Linkedin</a>
+        </nav>
+
+         <div class="hamburger" onclick="menuToggle()">
+            <div> </div>
+            <div> </div>
+            <div> </div>
+          <nav id="hamburgerMenu">
+            <a href="https://github.com/Lightsnake" target="_blank">Github</a>
+            <a href="https://www.linkedin.com/in/andrew-tsan/" target="_blank" >Linkedin</a>
+          </nav>
+        </div>
+        
+            
+        <div class="titleCard">
+                <h1> Hand Detection </h1>
+                <p> I made this app to stop my habit of touching my face. </p>
+                <p> To use this: Just allow webcam and leave it on the in the background.</p> 
+                <p> Michael Jordan will tell you to stop touching your when the app detect your hands in the webcam!</p>
+        </div>
+        
+        <audio src="Michael Jordan Stop It, Get Some Help.mp3" id="audio"> </audio>
+        <div class="contentCenter">
+        <video id="video"></video>
+        <canvas id="canvas"></canvas>
+        </div>
+    
+
+      <footer>
+        <h1> Andrew Tsan </h1>
+      </footer>
+
+      <script type="text/javascript" src="../js/main.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/handtrackjs/dist/handtrack.min.js"> </script>
+      <script src="app.js"></script>
+  </body>
+</html>
